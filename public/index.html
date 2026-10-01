@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Code Clash</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<section id="lobby" class="card"><h1>⚡ Code Clash</h1><p class="tag">A real-time reaction race. First to 10 points wins.</p>
+<input id="name" maxlength="18" placeholder="Your name" autocomplete="name"><div class="actions"><button id="create">Create Room</button><button id="showJoin" class="secondary">Join Room</button></div>
+<div id="joinBox" class="hidden"><input id="code" maxlength="5" placeholder="ROOM CODE"><button id="join">Join</button></div><p id="error" class="error"></p>
+<div class="rules"><b>How to play</b><ol><li>Two players join the same room.</li><li>When the target appears, tap it before your opponent.</li><li>Each hit gives 1 point.</li><li>First player to reach 10 points wins.</li></ol></div></section>
+<section id="game" class="hidden"><div class="top"><div><span class="muted">ROOM</span><strong id="roomCode">-----</strong></div><div id="status">Waiting…</div></div>
+<div id="scores" class="scores"></div><div class="arena card"><div id="message">Share the room code with your opponent.</div><div id="countdown" class="countdown"></div><button id="target" class="target hidden" aria-label="Hit target">CLICK!</button></div>
+<button id="start">Start Round</button><button id="back" class="link">Leave room</button></section>
+</main><script src="app.js"></script></body></html>
